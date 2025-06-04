@@ -1,10 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自己紹介サイト</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
 
+</head>
+
+<body>
+	<!-- splash-screen -->
+	<div id="splash-screen">
+		<div class="splash-inner"></div>
+	  <div class="logo-text">自己紹介サイト</div>
+	</div>
+  
+<div class="container">
+	
+	<!-- header -->
+	<header class="header">
+	  <div class="logo">自己紹介サイト</div>
+	  <div class="hamburger" id="hamburger">
+	    <span></span>
+	    <span></span>
+	    <span></span>
+	  </div>
+	</header>
+	
+	<!-- ハンバーガーメニュー -->
+	<nav class="nav-menu" id="nav-menu">
+	   <ul>
+	     <li><a href="#profile">プロフィール</a></li>
+	     <li><a href="#hobbies">趣味</a></li>
+	     <li><a href="#pets">うちの子たち</a></li>
+	   </ul>
+	 </nav>
+
+
+    <!-- hero section -->
+    <section class="hero">
+        <h2>こんにちは、<br>
+			党姸です！</h2>
+	  </section>
+
+	  <!-- profile -->
+      <div class="intro-content slide-up" id="profile">
+        <div class="text-box">
+          <h3 class="tag-title" >プロフィール</h3>
+          <ul>
+            <li>中国深セン出身</li>
+            <li>岐阜大学 メディア論専攻</li>
+			<li>家族：両親、犬、猫</li>
+          </ul>
+        </div>
+
+        <div class="photo-box">
+          <img src="./img/とう.jpeg" alt="プロフィール写真" />
+        </div>
+      </div>
+    
+
+    <!-- hobbies -->
+	
+	<section class="portfolio-section slide-up" id="hobbies">
+	  <h3 class="tag-title" data-aos="fade-up">趣味</h3>
+	  <div class="portfolio-wrapper">
+	    <div class="portfolio-card" data-aos="fade-up">
+	      <figure>
+	        <img src="./img/valolant.jpg" alt="ゲーム">
+	        <figcaption>
+			<h4>ゲーム</h4>
+	          <p>チーム戦大好き！最近はVALORANTに沼ってます</p>
+	        </figcaption>
+	      </figure>
+	    </div>
+	    <div class="portfolio-card" data-aos="fade-up">
+	      <figure>
+	        <img src="./img/animate.jpg" alt="アニメ">
+	        <figcaption>
+	          <div class="h4">アニメ</div>
+	          <p>ジャンプ系アニメが好きで、昔からよく見ています✨</p>
+	        </figcaption>
+	      </figure>
+	    </div>
+	    <div class="portfolio-card" data-aos="fade-up">
+	      <figure>
+	        <img src="./img/oyatsu.jpg" alt="お菓子作り">
+	        <figcaption>
+	          <div class="h4">お菓子作り</div>
+	          <p>時々はキッチンでクッキー作り🧁</p>
+	        </figcaption>
+	      </figure>
+	    </div>
+	  </div>
+	</section>
+		
+	
+      </div>
+    
+
+	<!-- pet-slider -->
+	<section class="pet-slider-js slide-up" id="pets">
+	  <h2>うちの子たち 🐶🐱</h2>
+	  <div class="slider-container">
+		<button class="prev">←</button>
+		<div class="slider-wrapper">
+			<div class="slider-track">
+				<figure class="pet-slide">
+				    <img src="./img/犬１.JPG" alt="犬1" />
+				    <figcaption class="pet-name">球球(チュウチュウ)</figcaption>
+				  </figure>
+				  <figure class="pet-slide">
+				      <img src="./img/猫１.jpeg" alt="猫1" />
+				      <figcaption class="pet-name">团团(タンタン)</figcaption>
+				    </figure>
+					<figure class="pet-slide">
+					    <img src="./img/犬２.jpeg" alt="犬2" />
+					    <figcaption class="pet-name">球球</figcaption>
+					  </figure>
+					  <figure class="pet-slide">
+					  	<img src="./img/neko2.jpg" alt="猫2" />
+					  	<figcaption class="pet-name">团团</figcaption>
+					  </figure>
+					  <figure class="pet-slide">
+					  	<img src="./img/犬３.jpeg" alt="犬3" />
+					  	<figcaption class="pet-name">团团</figcaption>
+					  </figure>
+					</div>
+		</div>
+		<button class="next">→</button>
+	  </div>
+	</section>
+
+
+  <footer class="site-footer slide-up">
+       <p>見てくれてありがとうございます！</p>
+	   <div class="paw-print" id="paw">🐾</div>
+  </footer>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
